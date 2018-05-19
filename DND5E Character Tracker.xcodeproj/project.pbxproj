@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F57FB1F920AC13AF002F2BD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB1F820AC13AF002F2BD5 /* AppDelegate.swift */; };
+		F57FB20220AC13AF002F2BD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57FB20020AC13AF002F2BD5 /* Main.storyboard */; };
+		F57FB20420AC13B0002F2BD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F57FB20320AC13B0002F2BD5 /* Assets.xcassets */; };
+		F57FB20720AC13B0002F2BD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57FB20520AC13B0002F2BD5 /* LaunchScreen.storyboard */; };
+		F57FB21220AC13B1002F2BD5 /* DND5E_Character_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB21120AC13B1002F2BD5 /* DND5E_Character_TrackerTests.swift */; };
+		F57FB21D20AC13B1002F2BD5 /* DND5E_Character_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB21C20AC13B1002F2BD5 /* DND5E_Character_TrackerUITests.swift */; };
+		F57FB22B20AC168C002F2BD5 /* CharacterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB22A20AC168C002F2BD5 /* CharacterPageViewController.swift */; };
+		F57FB22D20AC5077002F2BD5 /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB22C20AC5077002F2BD5 /* StoryboardExtension.swift */; };
+		F57FB22F20AC5B39002F2BD5 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB22E20AC5B39002F2BD5 /* Character.swift */; };
+		F57FB23120ACDE9D002F2BD5 /* Rogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB23020ACDE9D002F2BD5 /* Rogue.swift */; };
+		F57FB23320ACE774002F2BD5 /* BaseStatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB23220ACE774002F2BD5 /* BaseStatViewController.swift */; };
+		F57FB23C20B0DBA9002F2BD5 /* ProficiencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB23B20B0DBA9002F2BD5 /* ProficiencyCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F57FB20E20AC13B1002F2BD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F57FB1ED20AC13AF002F2BD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F57FB1F420AC13AF002F2BD5;
+			remoteInfo = "DND5E Character Tracker";
+		};
+		F57FB21920AC13B1002F2BD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F57FB1ED20AC13AF002F2BD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F57FB1F420AC13AF002F2BD5;
+			remoteInfo = "DND5E Character Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F57FB1F520AC13AF002F2BD5 /* DND5E Character Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DND5E Character Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57FB1F820AC13AF002F2BD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F57FB20120AC13AF002F2BD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F57FB20320AC13B0002F2BD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F57FB20620AC13B0002F2BD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F57FB20820AC13B0002F2BD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F57FB20D20AC13B1002F2BD5 /* DND5E Character TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DND5E Character TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57FB21120AC13B1002F2BD5 /* DND5E_Character_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DND5E_Character_TrackerTests.swift; sourceTree = "<group>"; };
+		F57FB21320AC13B1002F2BD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F57FB21820AC13B1002F2BD5 /* DND5E Character TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DND5E Character TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57FB21C20AC13B1002F2BD5 /* DND5E_Character_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DND5E_Character_TrackerUITests.swift; sourceTree = "<group>"; };
+		F57FB21E20AC13B1002F2BD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F57FB22A20AC168C002F2BD5 /* CharacterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPageViewController.swift; sourceTree = "<group>"; };
+		F57FB22C20AC5077002F2BD5 /* StoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardExtension.swift; sourceTree = "<group>"; };
+		F57FB22E20AC5B39002F2BD5 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		F57FB23020ACDE9D002F2BD5 /* Rogue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rogue.swift; sourceTree = "<group>"; };
+		F57FB23220ACE774002F2BD5 /* BaseStatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseStatViewController.swift; sourceTree = "<group>"; };
+		F57FB23B20B0DBA9002F2BD5 /* ProficiencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProficiencyCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F57FB1F220AC13AF002F2BD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57FB20A20AC13B1002F2BD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57FB21520AC13B1002F2BD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F57FB1EC20AC13AF002F2BD5 = {
+			isa = PBXGroup;
+			children = (
+				F57FB1F720AC13AF002F2BD5 /* DND5E Character Tracker */,
+				F57FB21020AC13B1002F2BD5 /* DND5E Character TrackerTests */,
+				F57FB21B20AC13B1002F2BD5 /* DND5E Character TrackerUITests */,
+				F57FB1F620AC13AF002F2BD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F57FB1F620AC13AF002F2BD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F57FB1F520AC13AF002F2BD5 /* DND5E Character Tracker.app */,
+				F57FB20D20AC13B1002F2BD5 /* DND5E Character TrackerTests.xctest */,
+				F57FB21820AC13B1002F2BD5 /* DND5E Character TrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F57FB1F720AC13AF002F2BD5 /* DND5E Character Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				F57FB20820AC13B0002F2BD5 /* Info.plist */,
+				F57FB23820ACE7C9002F2BD5 /* Utility */,
+				F57FB23720ACE7A2002F2BD5 /* Configuration */,
+				F57FB23620ACE790002F2BD5 /* Models */,
+				F57FB23520ACE785002F2BD5 /* Storyboards */,
+				F57FB23420ACE77B002F2BD5 /* ViewControllers */,
+			);
+			path = "DND5E Character Tracker";
+			sourceTree = "<group>";
+		};
+		F57FB21020AC13B1002F2BD5 /* DND5E Character TrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F57FB21120AC13B1002F2BD5 /* DND5E_Character_TrackerTests.swift */,
+				F57FB21320AC13B1002F2BD5 /* Info.plist */,
+			);
+			path = "DND5E Character TrackerTests";
+			sourceTree = "<group>";
+		};
+		F57FB21B20AC13B1002F2BD5 /* DND5E Character TrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F57FB21C20AC13B1002F2BD5 /* DND5E_Character_TrackerUITests.swift */,
+				F57FB21E20AC13B1002F2BD5 /* Info.plist */,
+			);
+			path = "DND5E Character TrackerUITests";
+			sourceTree = "<group>";
+		};
+		F57FB23420ACE77B002F2BD5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F57FB23A20B0DB77002F2BD5 /* Cells */,
+				F57FB22A20AC168C002F2BD5 /* CharacterPageViewController.swift */,
+				F57FB23220ACE774002F2BD5 /* BaseStatViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F57FB23520ACE785002F2BD5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F57FB20020AC13AF002F2BD5 /* Main.storyboard */,
+				F57FB20520AC13B0002F2BD5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F57FB23620ACE790002F2BD5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F57FB22E20AC5B39002F2BD5 /* Character.swift */,
+				F57FB23020ACDE9D002F2BD5 /* Rogue.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F57FB23720ACE7A2002F2BD5 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F57FB1F820AC13AF002F2BD5 /* AppDelegate.swift */,
+				F57FB20320AC13B0002F2BD5 /* Assets.xcassets */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		F57FB23820ACE7C9002F2BD5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F57FB23920ACE7D8002F2BD5 /* Extensions */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F57FB23920ACE7D8002F2BD5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F57FB22C20AC5077002F2BD5 /* StoryboardExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F57FB23A20B0DB77002F2BD5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F57FB23B20B0DBA9002F2BD5 /* ProficiencyCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F57FB1F420AC13AF002F2BD5 /* DND5E Character Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F57FB22120AC13B1002F2BD5 /* Build configuration list for PBXNativeTarget "DND5E Character Tracker" */;
+			buildPhases = (
+				F57FB1F120AC13AF002F2BD5 /* Sources */,
+				F57FB1F220AC13AF002F2BD5 /* Frameworks */,
+				F57FB1F320AC13AF002F2BD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DND5E Character Tracker";
+			productName = "DND5E Character Tracker";
+			productReference = F57FB1F520AC13AF002F2BD5 /* DND5E Character Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F57FB20C20AC13B1002F2BD5 /* DND5E Character TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F57FB22420AC13B1002F2BD5 /* Build configuration list for PBXNativeTarget "DND5E Character TrackerTests" */;
+			buildPhases = (
+				F57FB20920AC13B1002F2BD5 /* Sources */,
+				F57FB20A20AC13B1002F2BD5 /* Frameworks */,
+				F57FB20B20AC13B1002F2BD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F57FB20F20AC13B1002F2BD5 /* PBXTargetDependency */,
+			);
+			name = "DND5E Character TrackerTests";
+			productName = "DND5E Character TrackerTests";
+			productReference = F57FB20D20AC13B1002F2BD5 /* DND5E Character TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F57FB21720AC13B1002F2BD5 /* DND5E Character TrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F57FB22720AC13B1002F2BD5 /* Build configuration list for PBXNativeTarget "DND5E Character TrackerUITests" */;
+			buildPhases = (
+				F57FB21420AC13B1002F2BD5 /* Sources */,
+				F57FB21520AC13B1002F2BD5 /* Frameworks */,
+				F57FB21620AC13B1002F2BD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F57FB21A20AC13B1002F2BD5 /* PBXTargetDependency */,
+			);
+			name = "DND5E Character TrackerUITests";
+			productName = "DND5E Character TrackerUITests";
+			productReference = F57FB21820AC13B1002F2BD5 /* DND5E Character TrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F57FB1ED20AC13AF002F2BD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Vlad Z";
+				TargetAttributes = {
+					F57FB1F420AC13AF002F2BD5 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					F57FB20C20AC13B1002F2BD5 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = F57FB1F420AC13AF002F2BD5;
+					};
+					F57FB21720AC13B1002F2BD5 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = F57FB1F420AC13AF002F2BD5;
+					};
+				};
+			};
+			buildConfigurationList = F57FB1F020AC13AF002F2BD5 /* Build configuration list for PBXProject "DND5E Character Tracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F57FB1EC20AC13AF002F2BD5;
+			productRefGroup = F57FB1F620AC13AF002F2BD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F57FB1F420AC13AF002F2BD5 /* DND5E Character Tracker */,
+				F57FB20C20AC13B1002F2BD5 /* DND5E Character TrackerTests */,
+				F57FB21720AC13B1002F2BD5 /* DND5E Character TrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F57FB1F320AC13AF002F2BD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57FB20720AC13B0002F2BD5 /* LaunchScreen.storyboard in Resources */,
+				F57FB20420AC13B0002F2BD5 /* Assets.xcassets in Resources */,
+				F57FB20220AC13AF002F2BD5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57FB20B20AC13B1002F2BD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57FB21620AC13B1002F2BD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F57FB1F120AC13AF002F2BD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57FB1F920AC13AF002F2BD5 /* AppDelegate.swift in Sources */,
+				F57FB23320ACE774002F2BD5 /* BaseStatViewController.swift in Sources */,
+				F57FB23120ACDE9D002F2BD5 /* Rogue.swift in Sources */,
+				F57FB22D20AC5077002F2BD5 /* StoryboardExtension.swift in Sources */,
+				F57FB23C20B0DBA9002F2BD5 /* ProficiencyCell.swift in Sources */,
+				F57FB22B20AC168C002F2BD5 /* CharacterPageViewController.swift in Sources */,
+				F57FB22F20AC5B39002F2BD5 /* Character.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57FB20920AC13B1002F2BD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57FB21220AC13B1002F2BD5 /* DND5E_Character_TrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57FB21420AC13B1002F2BD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57FB21D20AC13B1002F2BD5 /* DND5E_Character_TrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F57FB20F20AC13B1002F2BD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F57FB1F420AC13AF002F2BD5 /* DND5E Character Tracker */;
+			targetProxy = F57FB20E20AC13B1002F2BD5 /* PBXContainerItemProxy */;
+		};
+		F57FB21A20AC13B1002F2BD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F57FB1F420AC13AF002F2BD5 /* DND5E Character Tracker */;
+			targetProxy = F57FB21920AC13B1002F2BD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F57FB20020AC13AF002F2BD5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F57FB20120AC13AF002F2BD5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F57FB20520AC13B0002F2BD5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F57FB20620AC13B0002F2BD5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F57FB21F20AC13B1002F2BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F57FB22020AC13B1002F2BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F57FB22220AC13B1002F2BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8SREYL8WVJ;
+				INFOPLIST_FILE = "DND5E Character Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.impaleentertainment.com.DND5E-Character-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F57FB22320AC13B1002F2BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8SREYL8WVJ;
+				INFOPLIST_FILE = "DND5E Character Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.impaleentertainment.com.DND5E-Character-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F57FB22520AC13B1002F2BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "DND5E Character TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.impaleentertainment.com.DND5E-Character-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DND5E Character Tracker.app/DND5E Character Tracker";
+			};
+			name = Debug;
+		};
+		F57FB22620AC13B1002F2BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "DND5E Character TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.impaleentertainment.com.DND5E-Character-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DND5E Character Tracker.app/DND5E Character Tracker";
+			};
+			name = Release;
+		};
+		F57FB22820AC13B1002F2BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "DND5E Character TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.impaleentertainment.com.DND5E-Character-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DND5E Character Tracker";
+			};
+			name = Debug;
+		};
+		F57FB22920AC13B1002F2BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "DND5E Character TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.impaleentertainment.com.DND5E-Character-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DND5E Character Tracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F57FB1F020AC13AF002F2BD5 /* Build configuration list for PBXProject "DND5E Character Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57FB21F20AC13B1002F2BD5 /* Debug */,
+				F57FB22020AC13B1002F2BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F57FB22120AC13B1002F2BD5 /* Build configuration list for PBXNativeTarget "DND5E Character Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57FB22220AC13B1002F2BD5 /* Debug */,
+				F57FB22320AC13B1002F2BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F57FB22420AC13B1002F2BD5 /* Build configuration list for PBXNativeTarget "DND5E Character TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57FB22520AC13B1002F2BD5 /* Debug */,
+				F57FB22620AC13B1002F2BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F57FB22720AC13B1002F2BD5 /* Build configuration list for PBXNativeTarget "DND5E Character TrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57FB22820AC13B1002F2BD5 /* Debug */,
+				F57FB22920AC13B1002F2BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F57FB1ED20AC13AF002F2BD5 /* Project object */;
+}

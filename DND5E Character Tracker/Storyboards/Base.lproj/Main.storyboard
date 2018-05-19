@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Em-iP-e2q">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Character Page View Controller-->
+        <scene sceneID="icI-qd-AiD">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="none" id="9Em-iP-e2q" customClass="CharacterPageViewController" customModule="DND5E_Character_Tracker" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eho-w8-09C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575" y="-204"/>
+        </scene>
+        <!--Base Stat View Controller-->
+        <scene sceneID="vcH-jO-de3">
+            <objects>
+                <viewController storyboardIdentifier="BaseStatViewController" id="KwZ-Ju-qCo" customClass="BaseStatViewController" customModule="DND5E_Character_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="awR-3J-giG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0Ek-df-WtS" userLabel="Abilities">
+                                <rect key="frame" x="10" y="50" width="78.5" height="410"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5Yg-Hl-VOh">
+                                        <rect key="frame" x="0.0" y="0.0" width="78.5" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strength" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFZ-Aa-W2z">
+                                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftG-Jo-STx">
+                                                <rect key="frame" x="0.0" y="16.5" width="78.5" height="27"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WB-GD-end">
+                                                <rect key="frame" x="0.0" y="43.5" width="78.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="V3V-Yf-h4l">
+                                        <rect key="frame" x="0.0" y="70" width="78.5" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dexterity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhe-c4-amA">
+                                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYu-Bp-VdQ">
+                                                <rect key="frame" x="0.0" y="16.5" width="78.5" height="27"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQs-zK-901">
+                                                <rect key="frame" x="0.0" y="43.5" width="78.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3iw-1b-Hl3">
+                                        <rect key="frame" x="0.0" y="140" width="78.5" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Constitution" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdQ-FR-hwV">
+                                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jyx-ar-oDr">
+                                                <rect key="frame" x="0.0" y="16.5" width="78.5" height="27"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuC-Vr-Hro">
+                                                <rect key="frame" x="0.0" y="43.5" width="78.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pz1-9y-FON">
+                                        <rect key="frame" x="0.0" y="210" width="78.5" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intelligence" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ea-7R-eGb">
+                                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0z-LT-3Wx">
+                                                <rect key="frame" x="0.0" y="16.5" width="78.5" height="27"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6O-NO-20b">
+                                                <rect key="frame" x="0.0" y="43.5" width="78.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jWQ-NG-HDa">
+                                        <rect key="frame" x="0.0" y="280" width="78.5" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wisdom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxJ-V2-vs4">
+                                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QD6-Pl-YLv">
+                                                <rect key="frame" x="0.0" y="16.5" width="78.5" height="27"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkG-g9-3pP">
+                                                <rect key="frame" x="0.0" y="43.5" width="78.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kqo-iD-pmY">
+                                        <rect key="frame" x="0.0" y="350" width="78.5" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charisma" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xh4-Y2-AhC">
+                                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LG8-zO-dJd">
+                                                <rect key="frame" x="0.0" y="16.5" width="78.5" height="27"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUS-dQ-L5y">
+                                                <rect key="frame" x="0.0" y="43.5" width="78.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSn-ra-nSb" userLabel="Other Stats">
+                                <rect key="frame" x="93.5" y="50" width="266.5" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="55" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEG-lx-69M">
+                                        <rect key="frame" x="5" y="5" width="24.5" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="55" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOR-dU-6yT">
+                                        <rect key="frame" x="5" y="28.5" width="24.5" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="55" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbq-V2-eh3">
+                                        <rect key="frame" x="5" y="52" width="24.5" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inspiration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3V-RC-lUe">
+                                        <rect key="frame" x="34.5" y="5.5" width="99.5" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proficiency Bonus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgU-QR-6Oi">
+                                        <rect key="frame" x="34.5" y="28.5" width="160.5" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passive Wisdom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYC-wJ-Bp0">
+                                        <rect key="frame" x="34.5" y="52" width="144" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="dEG-lx-69M" firstAttribute="top" secondItem="aSn-ra-nSb" secondAttribute="top" constant="5" id="19M-wB-Kn1"/>
+                                    <constraint firstItem="oOR-dU-6yT" firstAttribute="leading" secondItem="aSn-ra-nSb" secondAttribute="leading" constant="5" id="Htx-vJ-ceW"/>
+                                    <constraint firstItem="dEG-lx-69M" firstAttribute="leading" secondItem="aSn-ra-nSb" secondAttribute="leading" constant="5" id="K6d-lw-sMf"/>
+                                    <constraint firstItem="oOR-dU-6yT" firstAttribute="top" secondItem="dEG-lx-69M" secondAttribute="bottom" id="LU4-4F-rZ3"/>
+                                    <constraint firstItem="bbq-V2-eh3" firstAttribute="leading" secondItem="aSn-ra-nSb" secondAttribute="leading" constant="5" id="Oe8-aB-aaF"/>
+                                    <constraint firstItem="p3V-RC-lUe" firstAttribute="centerY" secondItem="dEG-lx-69M" secondAttribute="centerY" id="QMo-Os-sWJ"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eYC-wJ-Bp0" secondAttribute="trailing" constant="5" id="S2K-m7-9Eq"/>
+                                    <constraint firstItem="vgU-QR-6Oi" firstAttribute="leading" secondItem="p3V-RC-lUe" secondAttribute="leading" id="Tb6-jH-hnS"/>
+                                    <constraint firstAttribute="height" constant="80" id="WKh-AT-tGK"/>
+                                    <constraint firstItem="bbq-V2-eh3" firstAttribute="top" secondItem="oOR-dU-6yT" secondAttribute="bottom" id="bsx-pk-WaA"/>
+                                    <constraint firstItem="vgU-QR-6Oi" firstAttribute="leading" secondItem="oOR-dU-6yT" secondAttribute="trailing" constant="5" id="cYo-Yd-VOu"/>
+                                    <constraint firstItem="p3V-RC-lUe" firstAttribute="leading" secondItem="dEG-lx-69M" secondAttribute="trailing" constant="5" id="eCL-d4-Cb5"/>
+                                    <constraint firstItem="eYC-wJ-Bp0" firstAttribute="leading" secondItem="bbq-V2-eh3" secondAttribute="trailing" constant="5" id="i0B-8F-yxa"/>
+                                    <constraint firstItem="eYC-wJ-Bp0" firstAttribute="centerY" secondItem="bbq-V2-eh3" secondAttribute="centerY" id="kKD-pz-1hd"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vgU-QR-6Oi" secondAttribute="trailing" constant="5" id="m17-vP-tSY"/>
+                                    <constraint firstItem="vgU-QR-6Oi" firstAttribute="centerY" secondItem="oOR-dU-6yT" secondAttribute="centerY" id="xsE-pn-sSa"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="p3V-RC-lUe" secondAttribute="trailing" constant="5" id="yLb-mb-I7i"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BGe-wV-RHc">
+                                <rect key="frame" x="89" y="135" width="286" height="532"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="B8o-2C-dim">
+                                        <rect key="frame" x="0.0" y="28" width="286" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B8o-2C-dim" id="BGt-MS-EG0">
+                                            <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proficiency Bonus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6c-9O-bBp">
+                                                    <rect key="frame" x="20" y="10" width="160.5" height="23.5"/>
+                                                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="i6c-9O-bBp" secondAttribute="trailing" constant="15" id="Odg-iV-mIU"/>
+                                                <constraint firstItem="i6c-9O-bBp" firstAttribute="centerY" secondItem="BGt-MS-EG0" secondAttribute="centerY" id="Zpv-p2-Nc6"/>
+                                                <constraint firstItem="i6c-9O-bBp" firstAttribute="leading" secondItem="BGt-MS-EG0" secondAttribute="leading" constant="20" id="aCN-nn-FH5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProficiencyCell" id="Vno-I9-XyE" customClass="ProficiencyCell" customModule="DND5E_Character_Tracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="286" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vno-I9-XyE" id="E56-hc-bJx">
+                                            <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pku-LX-zdf">
+                                                    <rect key="frame" x="20" y="11" width="22" height="22"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="qzl-nB-qRp"/>
+                                                        <constraint firstAttribute="width" secondItem="Pku-LX-zdf" secondAttribute="height" multiplier="1:1" id="xYw-lR-4cb"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" text="+2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9p-L9-Ccz">
+                                                    <rect key="frame" x="47" y="10" width="24.5" height="23.5"/>
+                                                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Survival" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Z0-7P-cgD">
+                                                    <rect key="frame" x="76.5" y="10" width="74" height="23.5"/>
+                                                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Wis)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kb5-J3-kpk">
+                                                    <rect key="frame" x="155.5" y="10" width="46" height="23.5"/>
+                                                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kb5-J3-kpk" firstAttribute="centerY" secondItem="6Z0-7P-cgD" secondAttribute="centerY" id="5Xw-rj-YCN"/>
+                                                <constraint firstItem="Pku-LX-zdf" firstAttribute="leading" secondItem="E56-hc-bJx" secondAttribute="leadingMargin" constant="5" id="6hP-Of-hHo"/>
+                                                <constraint firstItem="I9p-L9-Ccz" firstAttribute="leading" secondItem="Pku-LX-zdf" secondAttribute="trailing" constant="5" id="Fo5-oj-A7B"/>
+                                                <constraint firstItem="kb5-J3-kpk" firstAttribute="leading" secondItem="6Z0-7P-cgD" secondAttribute="trailing" constant="5" id="JbV-UL-ieq"/>
+                                                <constraint firstItem="I9p-L9-Ccz" firstAttribute="centerY" secondItem="Pku-LX-zdf" secondAttribute="centerY" id="Q4D-oq-OAp"/>
+                                                <constraint firstItem="6Z0-7P-cgD" firstAttribute="centerY" secondItem="I9p-L9-Ccz" secondAttribute="centerY" id="bk1-V4-Ygk"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kb5-J3-kpk" secondAttribute="trailing" constant="5" id="fFb-oY-eOL"/>
+                                                <constraint firstItem="Pku-LX-zdf" firstAttribute="centerY" secondItem="E56-hc-bJx" secondAttribute="centerY" id="tbX-zK-h1G"/>
+                                                <constraint firstItem="6Z0-7P-cgD" firstAttribute="leading" secondItem="I9p-L9-Ccz" secondAttribute="trailing" constant="5" id="yrX-x4-9li"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xdw-Hp-zOl" firstAttribute="trailing" secondItem="aSn-ra-nSb" secondAttribute="trailing" constant="15" id="2jD-KQ-NwN"/>
+                            <constraint firstItem="0Ek-df-WtS" firstAttribute="leading" secondItem="Xdw-Hp-zOl" secondAttribute="leading" constant="10" id="AgO-PQ-OXu"/>
+                            <constraint firstItem="aSn-ra-nSb" firstAttribute="leading" secondItem="0Ek-df-WtS" secondAttribute="trailing" constant="5" id="Aoh-Nq-FII"/>
+                            <constraint firstItem="0Ek-df-WtS" firstAttribute="top" secondItem="Xdw-Hp-zOl" secondAttribute="top" constant="30" id="F3P-Mh-cLU"/>
+                            <constraint firstItem="BGe-wV-RHc" firstAttribute="top" secondItem="aSn-ra-nSb" secondAttribute="bottom" constant="5" id="Xhx-LA-N2e"/>
+                            <constraint firstItem="BGe-wV-RHc" firstAttribute="leading" secondItem="0Ek-df-WtS" secondAttribute="trailing" id="ZRs-oM-kgd"/>
+                            <constraint firstItem="Xdw-Hp-zOl" firstAttribute="trailing" secondItem="BGe-wV-RHc" secondAttribute="trailing" id="dBt-1c-2JK"/>
+                            <constraint firstItem="aSn-ra-nSb" firstAttribute="top" secondItem="0Ek-df-WtS" secondAttribute="top" id="jec-lH-CkO"/>
+                            <constraint firstItem="Xdw-Hp-zOl" firstAttribute="bottom" secondItem="BGe-wV-RHc" secondAttribute="bottom" id="uRs-Mm-ew8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xdw-Hp-zOl"/>
+                    </view>
+                    <connections>
+                        <outlet property="charismaModifier" destination="LG8-zO-dJd" id="K8A-wz-LJ2"/>
+                        <outlet property="charismaTotal" destination="FUS-dQ-L5y" id="GtK-gB-2ky"/>
+                        <outlet property="constitutionModifier" destination="Jyx-ar-oDr" id="3eX-Lk-Bf3"/>
+                        <outlet property="constitutionTotal" destination="tuC-Vr-Hro" id="NcS-ku-NXR"/>
+                        <outlet property="dexterityModifier" destination="HYu-Bp-VdQ" id="Z0V-w9-R0R"/>
+                        <outlet property="dexterityTotal" destination="YQs-zK-901" id="P8K-nD-Ox3"/>
+                        <outlet property="intelligenceModifier" destination="R0z-LT-3Wx" id="guo-oZ-4Ua"/>
+                        <outlet property="intelligenceTotal" destination="J6O-NO-20b" id="fKF-fD-2E3"/>
+                        <outlet property="proficiencyTable" destination="BGe-wV-RHc" id="85n-Xa-uej"/>
+                        <outlet property="strengthModifier" destination="ftG-Jo-STx" id="NHJ-Ho-1XS"/>
+                        <outlet property="strengthTotal" destination="3WB-GD-end" id="II0-Z5-19l"/>
+                        <outlet property="wisdomModifier" destination="QD6-Pl-YLv" id="CZG-NZ-7EX"/>
+                        <outlet property="wisdomTotal" destination="lkG-g9-3pP" id="Ntg-Ow-sf8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G0k-jw-E2I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kXU-v2-euy">
+                    <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </objects>
+            <point key="canvasLocation" x="-138.40000000000001" y="538.38080959520244"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Iuk-GV-ck4">
+            <objects>
+                <viewController storyboardIdentifier="CombatStatViewController" id="9cD-2g-4uZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7vT-Tw-A6p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="kAV-bb-l1T"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o6D-U0-dvj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="574" y="538"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BFb-ra-4bM">
+            <objects>
+                <viewController storyboardIdentifier="OtherStatViewController" id="vjH-qb-lfB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D0j-ym-vYR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="zvK-dH-oR4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UZS-Fq-MKs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1348" y="538"/>
+        </scene>
+    </scenes>
+</document>
