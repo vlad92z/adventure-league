@@ -8,17 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		F57FB1F920AC13AF002F2BD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB1F820AC13AF002F2BD5 /* AppDelegate.swift */; };
-		F57FB20220AC13AF002F2BD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57FB20020AC13AF002F2BD5 /* Main.storyboard */; };
+		F57FB20220AC13AF002F2BD5 /* CharacterSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57FB20020AC13AF002F2BD5 /* CharacterSheet.storyboard */; };
 		F57FB20420AC13B0002F2BD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F57FB20320AC13B0002F2BD5 /* Assets.xcassets */; };
 		F57FB20720AC13B0002F2BD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57FB20520AC13B0002F2BD5 /* LaunchScreen.storyboard */; };
 		F57FB21220AC13B1002F2BD5 /* DND5E_Character_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB21120AC13B1002F2BD5 /* DND5E_Character_TrackerTests.swift */; };
 		F57FB21D20AC13B1002F2BD5 /* DND5E_Character_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB21C20AC13B1002F2BD5 /* DND5E_Character_TrackerUITests.swift */; };
 		F57FB22B20AC168C002F2BD5 /* CharacterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB22A20AC168C002F2BD5 /* CharacterPageViewController.swift */; };
 		F57FB22D20AC5077002F2BD5 /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB22C20AC5077002F2BD5 /* StoryboardExtension.swift */; };
-		F57FB22F20AC5B39002F2BD5 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB22E20AC5B39002F2BD5 /* Character.swift */; };
+		F57FB22F20AC5B39002F2BD5 /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB22E20AC5B39002F2BD5 /* Creature.swift */; };
 		F57FB23120ACDE9D002F2BD5 /* Rogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB23020ACDE9D002F2BD5 /* Rogue.swift */; };
 		F57FB23320ACE774002F2BD5 /* BaseStatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB23220ACE774002F2BD5 /* BaseStatViewController.swift */; };
 		F57FB23C20B0DBA9002F2BD5 /* ProficiencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB23B20B0DBA9002F2BD5 /* ProficiencyCell.swift */; };
+		F57FB23E20B17967002F2BD5 /* ProficiencyHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB23D20B17967002F2BD5 /* ProficiencyHeaderCell.swift */; };
+		F57FB24020B179E2002F2BD5 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB23F20B179E2002F2BD5 /* UITableViewExtension.swift */; };
+		F57FB24420B18864002F2BD5 /* SavingThrowSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB24320B18864002F2BD5 /* SavingThrowSection.swift */; };
+		F57FB24620B189F2002F2BD5 /* Ability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB24520B189F2002F2BD5 /* Ability.swift */; };
+		F57FB24820B43DA1002F2BD5 /* CharacterList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57FB24720B43DA1002F2BD5 /* CharacterList.storyboard */; };
+		F57FB24C20B43F3E002F2BD5 /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB24B20B43F3E002F2BD5 /* CharacterListViewController.swift */; };
+		F57FB24E20B44275002F2BD5 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB24D20B44275002F2BD5 /* CharacterCell.swift */; };
+		F57FB25120B443D2002F2BD5 /* CharacterCreation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57FB25020B443D2002F2BD5 /* CharacterCreation.storyboard */; };
+		F57FB25320B445C6002F2BD5 /* BackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB25220B445C6002F2BD5 /* BackgroundViewController.swift */; };
+		F57FB25620B449A8002F2BD5 /* CharacterBackgroundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB25520B449A8002F2BD5 /* CharacterBackgroundCell.swift */; };
+		F57FB25820B44AE2002F2BD5 /* CharacterBackgroundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB25720B44AE2002F2BD5 /* CharacterBackgroundManager.swift */; };
+		F57FB25A20B44CF1002F2BD5 /* CharacterBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB25920B44CF1002F2BD5 /* CharacterBackground.swift */; };
+		F57FB25C20B8B056002F2BD5 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FB25B20B8B056002F2BD5 /* Skill.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +54,7 @@
 /* Begin PBXFileReference section */
 		F57FB1F520AC13AF002F2BD5 /* DND5E Character Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DND5E Character Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57FB1F820AC13AF002F2BD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F57FB20120AC13AF002F2BD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F57FB20120AC13AF002F2BD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CharacterSheet.storyboard; sourceTree = "<group>"; };
 		F57FB20320AC13B0002F2BD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F57FB20620AC13B0002F2BD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F57FB20820AC13B0002F2BD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,10 +66,23 @@
 		F57FB21E20AC13B1002F2BD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F57FB22A20AC168C002F2BD5 /* CharacterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPageViewController.swift; sourceTree = "<group>"; };
 		F57FB22C20AC5077002F2BD5 /* StoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardExtension.swift; sourceTree = "<group>"; };
-		F57FB22E20AC5B39002F2BD5 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		F57FB22E20AC5B39002F2BD5 /* Creature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
 		F57FB23020ACDE9D002F2BD5 /* Rogue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rogue.swift; sourceTree = "<group>"; };
 		F57FB23220ACE774002F2BD5 /* BaseStatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseStatViewController.swift; sourceTree = "<group>"; };
 		F57FB23B20B0DBA9002F2BD5 /* ProficiencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProficiencyCell.swift; sourceTree = "<group>"; };
+		F57FB23D20B17967002F2BD5 /* ProficiencyHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProficiencyHeaderCell.swift; sourceTree = "<group>"; };
+		F57FB23F20B179E2002F2BD5 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		F57FB24320B18864002F2BD5 /* SavingThrowSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingThrowSection.swift; sourceTree = "<group>"; };
+		F57FB24520B189F2002F2BD5 /* Ability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ability.swift; sourceTree = "<group>"; };
+		F57FB24720B43DA1002F2BD5 /* CharacterList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CharacterList.storyboard; sourceTree = "<group>"; };
+		F57FB24B20B43F3E002F2BD5 /* CharacterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
+		F57FB24D20B44275002F2BD5 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
+		F57FB25020B443D2002F2BD5 /* CharacterCreation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CharacterCreation.storyboard; sourceTree = "<group>"; };
+		F57FB25220B445C6002F2BD5 /* BackgroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundViewController.swift; sourceTree = "<group>"; };
+		F57FB25520B449A8002F2BD5 /* CharacterBackgroundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBackgroundCell.swift; sourceTree = "<group>"; };
+		F57FB25720B44AE2002F2BD5 /* CharacterBackgroundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBackgroundManager.swift; sourceTree = "<group>"; };
+		F57FB25920B44CF1002F2BD5 /* CharacterBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBackground.swift; sourceTree = "<group>"; };
+		F57FB25B20B8B056002F2BD5 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +164,9 @@
 		F57FB23420ACE77B002F2BD5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F57FB23A20B0DB77002F2BD5 /* Cells */,
-				F57FB22A20AC168C002F2BD5 /* CharacterPageViewController.swift */,
-				F57FB23220ACE774002F2BD5 /* BaseStatViewController.swift */,
+				F57FB24F20B443AD002F2BD5 /* CharacterCreation */,
+				F57FB24A20B43F07002F2BD5 /* CharacterView */,
+				F57FB24920B43EF9002F2BD5 /* CharacterList */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -148,8 +174,10 @@
 		F57FB23520ACE785002F2BD5 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				F57FB20020AC13AF002F2BD5 /* Main.storyboard */,
+				F57FB20020AC13AF002F2BD5 /* CharacterSheet.storyboard */,
 				F57FB20520AC13B0002F2BD5 /* LaunchScreen.storyboard */,
+				F57FB24720B43DA1002F2BD5 /* CharacterList.storyboard */,
+				F57FB25020B443D2002F2BD5 /* CharacterCreation.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -157,8 +185,10 @@
 		F57FB23620ACE790002F2BD5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F57FB22E20AC5B39002F2BD5 /* Character.swift */,
+				F57FB22E20AC5B39002F2BD5 /* Creature.swift */,
 				F57FB23020ACDE9D002F2BD5 /* Rogue.swift */,
+				F57FB24520B189F2002F2BD5 /* Ability.swift */,
+				F57FB25B20B8B056002F2BD5 /* Skill.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				F57FB22C20AC5077002F2BD5 /* StoryboardExtension.swift */,
+				F57FB23F20B179E2002F2BD5 /* UITableViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -192,6 +223,62 @@
 			isa = PBXGroup;
 			children = (
 				F57FB23B20B0DBA9002F2BD5 /* ProficiencyCell.swift */,
+				F57FB23D20B17967002F2BD5 /* ProficiencyHeaderCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F57FB24120B18828002F2BD5 /* BaseStatViewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				F57FB24220B1884A002F2BD5 /* ProficiencySections */,
+				F57FB23220ACE774002F2BD5 /* BaseStatViewController.swift */,
+				F57FB23A20B0DB77002F2BD5 /* Cells */,
+			);
+			path = BaseStatViewcontroller;
+			sourceTree = "<group>";
+		};
+		F57FB24220B1884A002F2BD5 /* ProficiencySections */ = {
+			isa = PBXGroup;
+			children = (
+				F57FB24320B18864002F2BD5 /* SavingThrowSection.swift */,
+			);
+			path = ProficiencySections;
+			sourceTree = "<group>";
+		};
+		F57FB24920B43EF9002F2BD5 /* CharacterList */ = {
+			isa = PBXGroup;
+			children = (
+				F57FB24B20B43F3E002F2BD5 /* CharacterListViewController.swift */,
+				F57FB24D20B44275002F2BD5 /* CharacterCell.swift */,
+			);
+			path = CharacterList;
+			sourceTree = "<group>";
+		};
+		F57FB24A20B43F07002F2BD5 /* CharacterView */ = {
+			isa = PBXGroup;
+			children = (
+				F57FB22A20AC168C002F2BD5 /* CharacterPageViewController.swift */,
+				F57FB24120B18828002F2BD5 /* BaseStatViewcontroller */,
+			);
+			path = CharacterView;
+			sourceTree = "<group>";
+		};
+		F57FB24F20B443AD002F2BD5 /* CharacterCreation */ = {
+			isa = PBXGroup;
+			children = (
+				F57FB25420B4498A002F2BD5 /* Cells */,
+				F57FB25220B445C6002F2BD5 /* BackgroundViewController.swift */,
+				F57FB25720B44AE2002F2BD5 /* CharacterBackgroundManager.swift */,
+				F57FB25920B44CF1002F2BD5 /* CharacterBackground.swift */,
+			);
+			path = CharacterCreation;
+			sourceTree = "<group>";
+		};
+		F57FB25420B4498A002F2BD5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F57FB25520B449A8002F2BD5 /* CharacterBackgroundCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -300,9 +387,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F57FB25120B443D2002F2BD5 /* CharacterCreation.storyboard in Resources */,
+				F57FB24820B43DA1002F2BD5 /* CharacterList.storyboard in Resources */,
 				F57FB20720AC13B0002F2BD5 /* LaunchScreen.storyboard in Resources */,
 				F57FB20420AC13B0002F2BD5 /* Assets.xcassets in Resources */,
-				F57FB20220AC13AF002F2BD5 /* Main.storyboard in Resources */,
+				F57FB20220AC13AF002F2BD5 /* CharacterSheet.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,12 +417,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				F57FB1F920AC13AF002F2BD5 /* AppDelegate.swift in Sources */,
+				F57FB24620B189F2002F2BD5 /* Ability.swift in Sources */,
+				F57FB25A20B44CF1002F2BD5 /* CharacterBackground.swift in Sources */,
+				F57FB25C20B8B056002F2BD5 /* Skill.swift in Sources */,
 				F57FB23320ACE774002F2BD5 /* BaseStatViewController.swift in Sources */,
+				F57FB25620B449A8002F2BD5 /* CharacterBackgroundCell.swift in Sources */,
+				F57FB23E20B17967002F2BD5 /* ProficiencyHeaderCell.swift in Sources */,
+				F57FB24C20B43F3E002F2BD5 /* CharacterListViewController.swift in Sources */,
+				F57FB25820B44AE2002F2BD5 /* CharacterBackgroundManager.swift in Sources */,
 				F57FB23120ACDE9D002F2BD5 /* Rogue.swift in Sources */,
 				F57FB22D20AC5077002F2BD5 /* StoryboardExtension.swift in Sources */,
 				F57FB23C20B0DBA9002F2BD5 /* ProficiencyCell.swift in Sources */,
+				F57FB24E20B44275002F2BD5 /* CharacterCell.swift in Sources */,
+				F57FB24020B179E2002F2BD5 /* UITableViewExtension.swift in Sources */,
 				F57FB22B20AC168C002F2BD5 /* CharacterPageViewController.swift in Sources */,
-				F57FB22F20AC5B39002F2BD5 /* Character.swift in Sources */,
+				F57FB24420B18864002F2BD5 /* SavingThrowSection.swift in Sources */,
+				F57FB25320B445C6002F2BD5 /* BackgroundViewController.swift in Sources */,
+				F57FB22F20AC5B39002F2BD5 /* Creature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,12 +469,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F57FB20020AC13AF002F2BD5 /* Main.storyboard */ = {
+		F57FB20020AC13AF002F2BD5 /* CharacterSheet.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F57FB20120AC13AF002F2BD5 /* Base */,
 			);
-			name = Main.storyboard;
+			name = CharacterSheet.storyboard;
 			sourceTree = "<group>";
 		};
 		F57FB20520AC13B0002F2BD5 /* LaunchScreen.storyboard */ = {

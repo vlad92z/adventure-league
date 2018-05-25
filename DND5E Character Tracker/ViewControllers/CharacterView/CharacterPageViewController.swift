@@ -10,14 +10,23 @@ import UIKit
 
 class CharacterPageViewController: UIPageViewController {
     
+    var character: Creature?
+    
     private(set) lazy var orderedViewControllers: [UIViewController] = {
-        return [newViewController("BaseStatViewController"),
+        guard let storyboard = storyboard else {
+            print("ViewController has no storyboard")
+            fatalError()
+        }
+        let baseStatViewController: BaseStatViewController = storyboard.viewController()
+        baseStatViewController.character = character
+        return [baseStatViewController,
                 newViewController("CombatStatViewController"),
                 newViewController("OtherStatViewController")]
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        character = Rogue()
         dataSource = self
         
         if let firstViewController = orderedViewControllers.first {
@@ -27,13 +36,6 @@ class CharacterPageViewController: UIPageViewController {
                                completion: nil)
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
     
     private func newViewController(_ viewControllerID: String) -> UIViewController {
         return storyboard?.instantiateViewController(withIdentifier: viewControllerID) ?? UIViewController()

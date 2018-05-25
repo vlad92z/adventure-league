@@ -9,5 +9,10 @@
 import UIKit
 
 class ProficiencyCell: UITableViewCell {
-
+    
+    @IBOutlet weak var checkBox: UIView!
+    @IBOutlet weak var modifier: UILabel!
+    @IBOutlet weak var associatedAbility: UILabel!
+    @IBOutlet weak var skill: UILabel!
+    
 }

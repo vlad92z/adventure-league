@@ -12,7 +12,11 @@ extension UIStoryboard {
     
     func viewController<T: UIViewController>() -> T {
         let className = String(describing: T.self)
-        return instantiateViewController(withIdentifier: className) as! T
+        guard let viewController = instantiateViewController(withIdentifier: className) as? T else {
+            print("Could not instantiate \(className)")
+            fatalError()
+        }
+        return viewController
     }
     
 }

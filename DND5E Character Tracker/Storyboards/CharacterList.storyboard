@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cs3-Pp-XGN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Character List View Controller-->
+        <scene sceneID="dbu-JX-hJh">
+            <objects>
+                <viewController id="Cs3-Pp-XGN" customClass="CharacterListViewController" customModule="DND5E_Character_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="50N-JU-lP1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f4S-lq-Hwx">
+                                <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharacterCell" id="rsm-cD-3bl" customClass="CharacterCell" customModule="DND5E_Character_Tracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rsm-cD-3bl" id="FUV-B1-3nZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seth, Tiefling Rogue, Level 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXB-r4-m3x">
+                                                    <rect key="frame" x="20" y="0.0" width="335" height="43"/>
+                                                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="LXB-r4-m3x" secondAttribute="trailing" constant="20" id="DjV-SL-oXP"/>
+                                                <constraint firstItem="LXB-r4-m3x" firstAttribute="top" secondItem="FUV-B1-3nZ" secondAttribute="top" id="GxK-Db-WDt"/>
+                                                <constraint firstItem="LXB-r4-m3x" firstAttribute="leading" secondItem="FUV-B1-3nZ" secondAttribute="leading" constant="20" id="Phd-BK-KqQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="LXB-r4-m3x" secondAttribute="bottom" id="xVY-P1-HDU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="characterNameLabel" destination="LXB-r4-m3x" id="Wy8-NR-Llu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpC-FD-Ejj">
+                                <rect key="frame" x="310" y="602" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="2OM-uJ-PlI"/>
+                                    <constraint firstAttribute="width" secondItem="QpC-FD-Ejj" secondAttribute="height" multiplier="1:1" id="V8s-oD-ZZT"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="QMR-BH-1ha" kind="show" id="9qu-qX-3Nd"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tsn-TO-FAQ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHARACTER LIST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1Z-kK-U3C">
+                                        <rect key="frame" x="119.5" y="30" width="136.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="h1Z-kK-U3C" firstAttribute="centerX" secondItem="tsn-TO-FAQ" secondAttribute="centerX" id="9Hj-7K-n09"/>
+                                    <constraint firstAttribute="height" constant="80" id="gP8-Fx-gLX"/>
+                                    <constraint firstItem="h1Z-kK-U3C" firstAttribute="centerY" secondItem="tsn-TO-FAQ" secondAttribute="centerY" id="ojw-qk-Anx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="n2k-2c-oe4" firstAttribute="bottom" secondItem="QpC-FD-Ejj" secondAttribute="bottom" constant="15" id="2eW-V1-Fi2"/>
+                            <constraint firstItem="n2k-2c-oe4" firstAttribute="bottom" secondItem="f4S-lq-Hwx" secondAttribute="bottom" id="Hds-ks-nFY"/>
+                            <constraint firstItem="f4S-lq-Hwx" firstAttribute="leading" secondItem="n2k-2c-oe4" secondAttribute="leading" id="XER-EP-Iab"/>
+                            <constraint firstItem="f4S-lq-Hwx" firstAttribute="top" secondItem="tsn-TO-FAQ" secondAttribute="bottom" id="Xrl-yv-YmB"/>
+                            <constraint firstItem="n2k-2c-oe4" firstAttribute="trailing" secondItem="tsn-TO-FAQ" secondAttribute="trailing" id="bHn-e9-N5x"/>
+                            <constraint firstItem="tsn-TO-FAQ" firstAttribute="leading" secondItem="n2k-2c-oe4" secondAttribute="leading" id="kE0-ls-eMP"/>
+                            <constraint firstItem="n2k-2c-oe4" firstAttribute="trailing" secondItem="QpC-FD-Ejj" secondAttribute="trailing" constant="15" id="laW-eE-UmR"/>
+                            <constraint firstItem="n2k-2c-oe4" firstAttribute="trailing" secondItem="f4S-lq-Hwx" secondAttribute="trailing" id="oo7-QE-5Mh"/>
+                            <constraint firstItem="tsn-TO-FAQ" firstAttribute="top" secondItem="n2k-2c-oe4" secondAttribute="top" id="ro7-Rs-XLO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="n2k-2c-oe4"/>
+                    </view>
+                    <connections>
+                        <outlet property="characterListTable" destination="f4S-lq-Hwx" id="Y92-J7-RUI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k9e-59-wuE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146.40000000000001" y="-28.335832083958024"/>
+        </scene>
+        <!--CharacterCreation-->
+        <scene sceneID="Tls-QK-lTa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CharacterCreation" id="QMR-BH-1ha" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yMO-xo-81I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="558" y="-29"/>
+        </scene>
+    </scenes>
+</document>

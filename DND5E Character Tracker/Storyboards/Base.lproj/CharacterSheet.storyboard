@@ -233,14 +233,14 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BGe-wV-RHc">
-                                <rect key="frame" x="89" y="135" width="286" height="532"/>
+                                <rect key="frame" x="93.5" y="135" width="281.5" height="532"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="B8o-2C-dim">
-                                        <rect key="frame" x="0.0" y="28" width="286" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProficiencyHeaderCell" id="B8o-2C-dim" customClass="ProficiencyHeaderCell" customModule="DND5E_Character_Tracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="281.5" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B8o-2C-dim" id="BGt-MS-EG0">
-                                            <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="281.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proficiency Bonus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6c-9O-bBp">
@@ -256,21 +256,28 @@
                                                 <constraint firstItem="i6c-9O-bBp" firstAttribute="leading" secondItem="BGt-MS-EG0" secondAttribute="leading" constant="20" id="aCN-nn-FH5"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="title" destination="i6c-9O-bBp" id="lfg-wM-Sbq"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProficiencyCell" id="Vno-I9-XyE" customClass="ProficiencyCell" customModule="DND5E_Character_Tracker" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="286" height="44"/>
+                                        <rect key="frame" x="0.0" y="72" width="281.5" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vno-I9-XyE" id="E56-hc-bJx">
-                                            <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="281.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pku-LX-zdf">
                                                     <rect key="frame" x="20" y="11" width="22" height="22"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="22" id="qzl-nB-qRp"/>
                                                         <constraint firstAttribute="width" secondItem="Pku-LX-zdf" secondAttribute="height" multiplier="1:1" id="xYw-lR-4cb"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" text="+2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9p-L9-Ccz">
                                                     <rect key="frame" x="47" y="10" width="24.5" height="23.5"/>
@@ -303,20 +310,46 @@
                                                 <constraint firstItem="6Z0-7P-cgD" firstAttribute="leading" secondItem="I9p-L9-Ccz" secondAttribute="trailing" constant="5" id="yrX-x4-9li"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="associatedAbility" destination="kb5-J3-kpk" id="xl6-Kf-Lmk"/>
+                                            <outlet property="checkBox" destination="Pku-LX-zdf" id="O1b-Kx-nUL"/>
+                                            <outlet property="modifier" destination="I9p-L9-Ccz" id="kEt-Fx-IOy"/>
+                                            <outlet property="skill" destination="6Z0-7P-cgD" id="AJZ-1C-DEW"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i6O-Bl-Esn" userLabel="Separator">
+                                <rect key="frame" x="92.5" y="130" width="282.5" height="1"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Hfr-xt-JW0"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxn-2z-ugh" userLabel="Separator">
+                                <rect key="frame" x="92.5" y="20" width="1" height="647"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="eSD-6E-1eh"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Xdw-Hp-zOl" firstAttribute="trailing" secondItem="aSn-ra-nSb" secondAttribute="trailing" constant="15" id="2jD-KQ-NwN"/>
+                            <constraint firstItem="cxn-2z-ugh" firstAttribute="trailing" secondItem="BGe-wV-RHc" secondAttribute="leading" id="3d5-oa-gFV"/>
                             <constraint firstItem="0Ek-df-WtS" firstAttribute="leading" secondItem="Xdw-Hp-zOl" secondAttribute="leading" constant="10" id="AgO-PQ-OXu"/>
                             <constraint firstItem="aSn-ra-nSb" firstAttribute="leading" secondItem="0Ek-df-WtS" secondAttribute="trailing" constant="5" id="Aoh-Nq-FII"/>
+                            <constraint firstItem="i6O-Bl-Esn" firstAttribute="leading" secondItem="cxn-2z-ugh" secondAttribute="leading" id="E9a-E6-evF"/>
+                            <constraint firstItem="Xdw-Hp-zOl" firstAttribute="trailing" secondItem="i6O-Bl-Esn" secondAttribute="trailing" id="F06-Oh-gl2"/>
                             <constraint firstItem="0Ek-df-WtS" firstAttribute="top" secondItem="Xdw-Hp-zOl" secondAttribute="top" constant="30" id="F3P-Mh-cLU"/>
+                            <constraint firstItem="i6O-Bl-Esn" firstAttribute="top" secondItem="aSn-ra-nSb" secondAttribute="bottom" id="Ovj-BG-BKS"/>
                             <constraint firstItem="BGe-wV-RHc" firstAttribute="top" secondItem="aSn-ra-nSb" secondAttribute="bottom" constant="5" id="Xhx-LA-N2e"/>
-                            <constraint firstItem="BGe-wV-RHc" firstAttribute="leading" secondItem="0Ek-df-WtS" secondAttribute="trailing" id="ZRs-oM-kgd"/>
+                            <constraint firstItem="Xdw-Hp-zOl" firstAttribute="bottom" secondItem="cxn-2z-ugh" secondAttribute="bottom" id="YSJ-go-iNA"/>
+                            <constraint firstItem="BGe-wV-RHc" firstAttribute="leading" secondItem="0Ek-df-WtS" secondAttribute="trailing" constant="5" id="ZRs-oM-kgd"/>
                             <constraint firstItem="Xdw-Hp-zOl" firstAttribute="trailing" secondItem="BGe-wV-RHc" secondAttribute="trailing" id="dBt-1c-2JK"/>
                             <constraint firstItem="aSn-ra-nSb" firstAttribute="top" secondItem="0Ek-df-WtS" secondAttribute="top" id="jec-lH-CkO"/>
+                            <constraint firstItem="cxn-2z-ugh" firstAttribute="top" secondItem="Xdw-Hp-zOl" secondAttribute="top" id="sHC-9a-T2d"/>
                             <constraint firstItem="Xdw-Hp-zOl" firstAttribute="bottom" secondItem="BGe-wV-RHc" secondAttribute="bottom" id="uRs-Mm-ew8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Xdw-Hp-zOl"/>
@@ -328,8 +361,11 @@
                         <outlet property="constitutionTotal" destination="tuC-Vr-Hro" id="NcS-ku-NXR"/>
                         <outlet property="dexterityModifier" destination="HYu-Bp-VdQ" id="Z0V-w9-R0R"/>
                         <outlet property="dexterityTotal" destination="YQs-zK-901" id="P8K-nD-Ox3"/>
+                        <outlet property="inspiration" destination="dEG-lx-69M" id="yXz-2i-fQM"/>
                         <outlet property="intelligenceModifier" destination="R0z-LT-3Wx" id="guo-oZ-4Ua"/>
                         <outlet property="intelligenceTotal" destination="J6O-NO-20b" id="fKF-fD-2E3"/>
+                        <outlet property="passivePerception" destination="bbq-V2-eh3" id="ZkA-0X-Yx0"/>
+                        <outlet property="proficiencyBonus" destination="oOR-dU-6yT" id="y6m-XH-r5w"/>
                         <outlet property="proficiencyTable" destination="BGe-wV-RHc" id="85n-Xa-uej"/>
                         <outlet property="strengthModifier" destination="ftG-Jo-STx" id="NHJ-Ho-1XS"/>
                         <outlet property="strengthTotal" destination="3WB-GD-end" id="II0-Z5-19l"/>

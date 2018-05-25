@@ -5,17 +5,15 @@
 //  Created by Vlad Z on 16/05/2018.
 //  Copyright © 2018 Vlad Z. All rights reserved.
 //
-
-class Rogue: Character {
+import Foundation
+class Rogue: Creature {
     
-    var baseStrength: Int = 0
-    var baseDexterity: Int = 0
-    var baseConstitution: Int = 0
-    var baseIntelligence: Int = 0
-    var baseWisdom: Int = 0
-    var baseCharisma: Int = 0
-
     var inspiration: Int = 0
     
+    func value(for ability: Ability) -> Int {
+        return 12
+    }
+    
+    var savingThrows: [Ability] = [.dexterity, .intelligence]
     
 }
