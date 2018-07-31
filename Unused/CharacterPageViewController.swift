@@ -10,7 +10,7 @@ import UIKit
 
 class CharacterPageViewController: UIPageViewController {
     
-    var character: Creature?
+    var character: Character?
     
     private(set) lazy var orderedViewControllers: [UIViewController] = {
         guard let storyboard = storyboard else {
@@ -20,13 +20,13 @@ class CharacterPageViewController: UIPageViewController {
         let baseStatViewController: BaseStatViewController = storyboard.viewController()
         baseStatViewController.character = character
         return [baseStatViewController,
-                newViewController("CombatStatViewController"),
+                newViewController("ConsumableViewController"),
                 newViewController("OtherStatViewController")]
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        character = Rogue()
+//        character = Character()
         dataSource = self
         
         if let firstViewController = orderedViewControllers.first {

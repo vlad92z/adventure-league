@@ -9,6 +9,8 @@
 import UIKit
 
 class CharacterBackgroundCell: UITableViewCell {
+    
+    private var background: CharacterBackground?
 
     @IBOutlet weak var backgroundName: UILabel!
     

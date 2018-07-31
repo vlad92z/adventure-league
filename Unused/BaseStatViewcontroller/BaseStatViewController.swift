@@ -29,7 +29,7 @@ class BaseStatViewController: UIViewController {
     
     @IBOutlet weak var proficiencyTable: UITableView!
     
-    var character: Creature?
+    var character: Character?
     
     lazy var sections: [SavingThrowSection] = [SavingThrowSection(with: character!),
                                                SavingThrowSection(with: character!)]

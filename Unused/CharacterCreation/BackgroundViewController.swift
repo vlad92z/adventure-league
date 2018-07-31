@@ -27,12 +27,13 @@ class BackgroundViewController: UIViewController {
 
 extension BackgroundViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return CharacterBackgroundManager.shared.backgrounds.count
+        return CharacterBackground.backgroundCount
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let characterBackgroundCell: CharacterBackgroundCell = tableView.dequeueReusableCell()
-        characterBackgroundCell.backgroundName.text = CharacterBackgroundManager.shared.backgrounds[indexPath.row]
+        let backgroundName = CharacterBackground(rawValue: indexPath.row)?.name
+        characterBackgroundCell.backgroundName.text = backgroundName
         return characterBackgroundCell
     }
     
@@ -44,5 +45,13 @@ extension BackgroundViewController: UITableViewDataSource {
 }
 
 extension BackgroundViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let storyboard = storyboard else {
+            fatalError("BackgroundViewController presented without a storyboard")
+        }
+        let raceViewController: RaceViewController = storyboard.viewController()
+        present(raceViewController, animated: true, completion: nil)
+    }
     
 }

@@ -1,5 +1,5 @@
 //
-//  Creature
+//  Character
 //  DND5E Character Tracker
 //
 //  Created by Vlad Z on 16/05/2018.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Creature {
+protocol Character {
     
     var armorClass: Int { get }
     var passivePerception: Int { get }
@@ -25,7 +25,7 @@ protocol Creature {
     
 }
 
-extension Creature {
+extension Character {
     
     var languages: [String] {
         return []

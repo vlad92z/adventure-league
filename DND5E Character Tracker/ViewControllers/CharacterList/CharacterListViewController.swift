@@ -9,6 +9,8 @@
 import UIKit
 
 class CharacterListViewController: UIViewController {
+    
+    var characterList = CharacterManager.shared.getStoredCharacters()
 
     @IBOutlet weak var characterListTable: UITableView!
     
@@ -20,6 +22,11 @@ class CharacterListViewController: UIViewController {
     
     @IBAction func unwindToCharacterList(segue:UIStoryboardSegue) {
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        characterList = CharacterManager.shared.getStoredCharacters()
+        characterListTable.reloadData()
     }
     
 }
@@ -35,12 +42,23 @@ extension CharacterListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return characterList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let characterCell: CharacterCell = tableView.dequeueReusableCell()
+        characterCell.characterNameLabel.text = characterList[indexPath.row].name
         return characterCell
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let characterIndex = indexPath.row
+            let character = characterList[characterIndex]
+            CharacterManager.shared.delete(character.name)
+            characterList.remove(at: characterIndex)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
     }
     
     

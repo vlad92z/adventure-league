@@ -10,13 +10,13 @@ import UIKit
 
 class SavingThrowSection {
     
-    let creature: Creature
+    let creature: Character
     
     let title = "SAVING THROWS"
     
-    let numberOfCells = Ability.totalAbilities
+    let numberOfCells = Ability.abilityCount
     
-    init(with creature: Creature) {
+    init(with creature: Character) {
         self.creature = creature
     }
     
